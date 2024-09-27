@@ -69,7 +69,7 @@ struct AppIdeaWidgetEntryView : View {
                 VStack {
                     Image(systemName: "paperplane").foregroundStyle(.white).font(.title2)
                     Spacer()
-                }.padding(.top,20)
+                }.padding(.top,50)
             }.padding(.horizontal,20)
 
             
@@ -88,6 +88,8 @@ struct AppIdeaWidget: Widget {
                 
                 
         }.contentMarginsDisabled().supportedFamilies([.systemMedium])
+            .configurationDisplayName("App Idea")
+            .description("With 'App Idea,' you can save your app ideas, highlight favorites, and easily track them all through a single widget.")
     }
 }
 
