@@ -11,7 +11,8 @@ import SwiftUI
 struct AppIdeaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppIdeaView()
+                .modelContainer(for: [AppIdea.self, AppFeature.self], inMemory: false)
         }
     }
 }
